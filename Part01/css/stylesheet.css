@@ -1,5 +1,11 @@
-.NavTable {
-    width: 100%;
-    background-color: brown;
-    color: azure;
+body, html {
+    width: 100vw; height: 100vh; margin: 0; padding: 0; overflow-x: hidden;
 }
+.CenterTable {
+    margin: 0 auto; width: 80%;
+}
+.NavLink {
+    color: azure; text-decoration: none; margin: 5;
+}
+
+
