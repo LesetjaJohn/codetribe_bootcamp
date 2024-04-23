@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../Main/css/fav02.css"/>
+    <link rel="stylesheet" type="text/css" href="../Main/css/stylesheet.css"/>
+    <script type="text/javascript" src="../Main/script/javascript.js"></script>
+</head>
+<body class="text-center" onload="LoadJS();">
+    <h1 id="contactHead" class="bg-primary m-3 rounded-bottom-5 rounded-top-3"></h1>
+    
+    <img class="w-100 m-3 rounded-3" height="200" src="../Main/images/contactus-banner.jpg" alt="Banner">
+    <!--Formspree API-->
+    <form id="contactForm" action="https://formspree.io/f/xnqelgjq" method="POST" class="bg-primary w-75 CenterTable rounded-bottom-5 fs-3 p-3">
+        <label class="form-label fs-4 w-100 mb-3"> Name and Surname
+            <input id="frmFullname" name="frmFullname" type="text" required placeholder="e.g John Doe" class="form-control fs-4 text-center">
+            <label id="frmFullnameInfo" class="form-text text-danger visually-hidden"></label>
+        </label><br>
+        <label class="form-label fs-4 w-100 mb-3"> Email Address
+            <input id="frmEmail" name="frmEmail" type="text" required placeholder="e.g johndoe@domain.com" class="form-control fs-4 text-center">
+            <label id="frmEmailInfo" class="form-text text-danger visually-hidden mb-2"></label>
+        </label><br>
+        <label class="form-label fs-4 w-100 mb-3"> Message
+            <textarea id="frmMessage" name="userMessage" required cols="30" rows="10" placeholder="Your message here" class="text-center form-control mb-2 fs-4"></textarea>
+            <label id="frmMessageInfo" class="form-text text-danger visually-hidden"></label>
+        </label><br>
+        <button id="btnSubmit" type="submit" class="fs-4 border-1 rounded-2 w-25 bg-info">Send</button>
+    </form>
+
+    <div class="CenterTable m2 w-25 bg-primary rounded-3">
+        <h4><u><i>Alternatively</i></u></h4>
+        <a id="cellLink" class="NavLink fs-4" href="tel:" target="_blank"><img width="48" height="48" src="https://img.icons8.com/papercut/100/phone-disconnected.png" alt="phone-disconnected"/><b id="cell"></b></a>
+        <a id="whatsapp" rel="noopener" href="https://wa.me/" target="_blank"><img width="48" height="48" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/></a>
+    </div>
+</body>
+</html>
