@@ -8,12 +8,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./css/Quartz.css">
   <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+  <script type="text/javascript" src="./script/index.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
-<body>
+<body onload="indexOnLoad();">
   <header>
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
       <div class="container-fluid">
@@ -45,20 +46,16 @@
   <!--Banner-->
   <div class="position-relative w-100 m-1 mainHeadser h-75 text-center">
     <img src="./images/desktop/image-header.jpg" alt="banner" class="position-absolute start-0 w-100 h-100 rounded-2">
-    <h1 class="fraunces-thick position-relative pt-5">WE ARE CREATIVES</h1>
+    <h1 class="fraunces-thick position-relative pt-5" id="bannerHeader"></h1>
     <svg class="position-relative pt-3" width="36" height="150" xmlns="http://www.w3.org/2000/svg"><g stroke="#FFF" stroke-width="6" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3v100M3 95.484l15 15 15-15"/></g></svg>
   </div>
   <!--Cards-->
   <div class="position-relative container-fluid text-black m-1">
     <div class="row gx-0">
-      <div class="col-6 bg-light p-5">
-        <h3 class="fraunces-medium">Transform your brand</h3>
-
-        <p class="boxP">We are a full-service creative agency specializing in helping brands grow fast. 
-          Engage your clients through compelling visuals that do most of the marketing for you.
-        </p>
-
-        <a href="" class="fraunces-medium boxLink boxLink-y">LEARN MORE</a>
+      <div class="col-6 bg-light p-5" id="card01">
+        <h3 class="fraunces-medium pt-5" id="card01Header"></h3>
+        <p class="boxP" id="card01Content"></p>
+        <a title="Go to page" href="" class="fraunces-medium boxLink boxLink-y" id="card01Link"></a>
       </div>
       <div class="col-6">
         <img src="./images/desktop/image-transform.jpg" alt="Transform your brand" class="h-100 w-100">
@@ -69,26 +66,22 @@
         <img src="./images/desktop/image-stand-out.jpg" alt="Stand out" class="h-100 w-100">
       </div>
       <div class="col-6 bg-light p-5">
-        <h3 class="fraunces-medium">Stand out to the right audience</h3>
-
-        <p class="boxP">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, 
-          we’ll build and extend your brand in digital places.
-        </p>
-
-        <a href="" class="fraunces-medium boxLink boxLink-r">LEARN MORE</a>
+        <h3 class="fraunces-medium pt-5" id="card02Header"></h3>
+        <p class="boxP" id="card02Content"></p>
+        <a title="Go to page" href="" class="fraunces-medium boxLink boxLink-r" id="card02Link"></a>
       </div>
     </div>
     <div class="row gx-0">
       <div class="col-6 Col1BoxOverlay position-relative">
         <span class="text-center position-absolute bottom-0 pb-3 ps-5 pe-5 graphicDesign">
-          <h5 class="fraunces-medium">Graphic design</h5>
-          Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+          <h5 class="fraunces-medium" id="card03Header"></h5>
+          <p id="card03Content" class="pb-3"></p>
         </span>
       </div>
       <div class="col-6 Col2BoxOverlay position-relative photography">
         <span class="text-center position-absolute bottom-0 pb-3 ps-5 pe-5">
-          <h5 class="fraunces-medium">Photography</h5>
-          Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+          <h5 class="fraunces-medium" id="card04Header"></h5>
+          <p id="card04Content" class="pb-3"></p>
         </span>
       </div>
     </div>
@@ -97,38 +90,32 @@
   <div class="container-fluid m-1 text-center bg-light rounded-3">
     <div class="row">
       <div class="col-12">
-        <h5 class="fraunces-medium dGrayishBlue p-4">CLIENT TESTIMONIALS</h5>
+        <h5 class="fraunces-medium dGrayishBlue p-4" id="testimonialHead"></h5>
       </div>
     </div>
     <div class="row ps-4 pe-4 pb-4">
       <div class="col-4">
         <img src="./images/image-emily.jpg" alt="Emily R." class="h-25 w-25 rounded-5">
         <span>
-          <p class="mt-3 VDgrayishBlue">
-            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-          </p>
-          <span class="VDgrayishBlue fraunces-medium fs-6 text-black">Emily R.</span><br>
-          <span class="grayishBlue">Managing Director</span>
+          <p class="mt-3 VDgrayishBlue" id="testimonContent01"></p>
+          <span class="VDgrayishBlue fraunces-medium fs-6 text-black" id="testimonName01"></span><br>
+          <span class="grayishBlue" id="testimonDes01"></span>
         </span>
       </div>
       <div class="col-4">
         <img src="./images/image-thomas.jpg" alt="Thomas S." class="h-25 w-25 rounded-5">
         <span>
-          <p class="mt-3 VDgrayishBlue">
-            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-          </p>
-          <span class="VDgrayishBlue fraunces-medium fs-6 text-black">Thomas S.</span><br>
-          <span class="grayishBlue">Chief Operating Officer</span>
+          <p class="mt-3 VDgrayishBlue" id="testimonContent02"></p>
+          <span class="VDgrayishBlue fraunces-medium fs-6 text-black" id="testimonName02"></span><br>
+          <span class="grayishBlue" id="testimonDes02"></span>
         </span>
       </div>
       <div class="col-4">
         <img src="./images/image-jennie.jpg" alt="Jennie F." class="h-25 w-25 rounded-5">
         <span>
-          <p class="mt-3 VDgrayishBlue">
-            Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-          </p>
-          <span class="VDgrayishBlue fraunces-medium fs-6 text-black">Jennie F.</span><br>
-          <span class="grayishBlue">Business Owner</span>
+          <p class="mt-3 VDgrayishBlue" id="testimonContent03"></p>
+          <span class="VDgrayishBlue fraunces-medium fs-6 text-black" id="testimonName03"></span><br>
+          <span class="grayishBlue" id="testimonDes03"></span>
         </span>
       </div>
     </div>
@@ -169,7 +156,7 @@
       </a>
     </div>
 <div class="attribution mt-1">
-  Bootcamp 2023 by
+  Bootcamp 2024 by
   <a rel="noopener" href="https://www.mlab.co.za" target="_blank">CodeTribe</a>. Developed
   by <a href="#">Lesetja John Mogashoa</a>.
 </div>

@@ -5,7 +5,7 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
+  - [My Proud snippets](#the-challenge)
   - [Links](#links)
   - [Built with](#built-with)
   - [Useful resources] (#useful-resources)
@@ -31,7 +31,23 @@ Users should be able to:
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-## My process
+## MyProudsnippets
+  01.
+  let Testimonials=
+    {
+        clientName:["Emily R.","Thomas S.","Jennie F."], 
+        comment:["We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.",
+                "Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.",
+                "Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!"], 
+        designation:["Managing Director","Chief Operating Officer","Business Owner"]
+    };
+
+    02.
+    for (let i = 0; i <= 3; i++) {
+        document.getElementById("testimonName0" + (i+1).toString()).innerHTML=Testimonials.clientName[i];
+        document.getElementById("testimonContent0" + (i+1).toString()).innerHTML=Testimonials.comment[i];
+        document.getElementById("testimonDes0" + (i+1).toString()).innerHTML=Testimonials.designation[i];
+    };
 
 ### Built with
 
