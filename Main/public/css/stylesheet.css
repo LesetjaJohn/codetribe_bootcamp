@@ -8,4 +8,9 @@ body, html {
     color: azure; text-decoration: none; margin: 5;
 }
 
+.NavLink:hover{
+    background-color: gray; text-decoration: none;
+    border-radius: 20%; color: azure; 
+}
+
 
