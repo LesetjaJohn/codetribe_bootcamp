@@ -11,34 +11,38 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
   - [Useful resources] (#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+### Screenshot
+
+![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)
 
 ## Overview
 
+The challenge is to build out this landing page and get it looking as close to the design as possible.
+
+This challenge focuses mostly on HTML, CSS, & Javascript.
+
 ### The challenge
 
-Users should be able to:
+Users are be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Screenshot
-
-![] (./screenshot.jpg)
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/LesetjaJohn/codetribe_bootcamp.git)
+- Live Site URL: [Add live site URL here](https://sunny-side-4b0ec.web.app/)
 
 ## MyProudsnippets
+
   01.
+
   let Testimonials=
     {
-        clientName:["Emily R.","Thomas S.","Jennie F."], 
+        clientName:["Emily R.","Thomas S.","Jennie F."],
         comment:["We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.",
                 "Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.",
-                "Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!"], 
+                "Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!"],
         designation:["Managing Director","Chief Operating Officer","Business Owner"]
     };
 
@@ -53,9 +57,10 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
+- Javascript
 - Flexbox
 - Bootstrap, Bootswatch Themes
-(https://getbootstrap.com/) (https://bootswatch.com/)
+(<https://getbootstrap.com/>) (<https://bootswatch.com/>)
 - Mobile-first workflow
 
 - [Bootswatch themes](https://bootswatch.com/quartz/) - Website theme
