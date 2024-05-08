@@ -23,15 +23,15 @@ This challenge focuses mostly on HTML, CSS, & Javascript.
 
 ### The challenge
 
-Users are be able to:
+Users are able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/LesetjaJohn/codetribe_bootcamp.git)
-- Live Site URL: [Add live site URL here](https://sunny-side-4b0ec.web.app/)
+- Solution URL: [View](https://github.com/LesetjaJohn/codetribe_bootcamp.git)
+- Live Site URL: [View](https://sunny-side-4b0ec.web.app/)
 
 ## MyProudsnippets
 
